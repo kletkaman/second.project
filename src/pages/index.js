@@ -9,6 +9,7 @@ import logo3 from '../images/logo-studio.png';
 import logo4 from '../images/logo-framer.png';
 import logo5 from '../images/logo-react.png';
 import logo6 from '../images/logo-swift.png';
+import Card from '../components/card';
 
 const IndexPage = () => (
   <Layout>
@@ -42,6 +43,35 @@ const IndexPage = () => (
           </svg>
         </div>
       </div>
+      <div className="Cards">
+	     <h2>11 courses, more coming</h2>
+	     <div className="CardGroup">
+	        <Card 
+	         title="DesignSystem"
+	         text="10 sections"
+	         image={require('../images/wallpaper.jpg')} />
+	        <Card 
+	         title="React for Designers"
+	         text="11 sections"
+	         image={require('../images/wallpaper2.jpg')} />
+	        <Card 
+	         title="Sound Design"
+	         text="5 sections"
+	         image={require('../images/wallpaper3.jpg')} />
+        	<Card 
+	         title="ARKit 2"
+	         text="10 sections"
+	         image={require('../images/wallpaper4.jpg')} />
+           <Card 
+	         title="Create a Sketch plugin"
+	         text="7 sections"
+	         image={require('../images/wallpaper4.jpg')} />
+           <Card 
+	         title="Swift Advanced"
+	         text="22 sections"
+	         image={require('../images/wallpaper4.jpg')} />
+       </div>
+       </div>
     </div>
   </Layout>
 )
