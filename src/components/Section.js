@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Wave from './Wave'
 
 const SectionGroup = styled.div`
 	margin: 100px 0 0;
@@ -39,7 +40,7 @@ const SectionTitle = styled.h3`
 	color: white;
 	font-size: 60px;
 	margin: 0;
-	line-height: 1.2;
+	line-height: 1.2; 
 
     @media (max-width: 640px) {
 		font-size: 40px;
@@ -65,8 +66,8 @@ const WaveTop = styled.div`
 
 const Section = props => (
 	<SectionGroup image={props.image}>
-     <WaveBottom><Wave /></WaveBottom>
         <WaveTop><Wave /></WaveTop>
+        <WaveBottom><Wave /></WaveBottom>
 		<SectionLogo src={props.logo} />
 		<SectionTitleGroup>
 			<SectionTitle>{props.title}</SectionTitle>
